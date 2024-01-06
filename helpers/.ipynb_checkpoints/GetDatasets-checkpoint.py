@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import make_classification, make_blobs, make_regression
-from Scratch.helpers.MathFunctions import logistic
+from helpers.MathFunctions import logistic
 
 def classification_split(n_samples=300, n_features=4, n_classes=2, n_clusters_per_class=1, random_state=42, test_size=0.2, binary_features=False):
     X, y = make_classification(n_samples=n_samples, n_features=n_features, n_classes=n_classes, n_clusters_per_class=n_clusters_per_class, random_state=random_state)
